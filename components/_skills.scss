@@ -1,0 +1,103 @@
+
+.skills__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3rem;
+    grid-column: 1/-1;
+  }
+  
+  .skills__title{
+    font-size: var(--font-size-38);
+    font-weight: var(--font-weight-semi-bold);
+  }
+  
+  .skills__bar{
+    width: 90%;
+    background-color: #dddddd9c;
+    border-radius: 2rem ;
+    margin: 2rem 2rem 0 ;
+    border: 3px solid #aaaaaabb; 
+    
+  }
+  
+  .skills__bar:hover{
+    animation: borderLoop 3s infinite backwards; /* Apply animation */
+  }
+  
+  @keyframes borderLoop {
+    0% {
+        border-color: #f029e6; /* Start Color */
+    }
+    25% {
+        border-color: #26ac0b; /* Yellow */
+    }
+    50% {
+        border-color: #2965f1; /* Blue */
+    }
+    75% {
+        border-color: #cf61fb; /* React Light Blue */
+    }
+    100% {
+        border-color: #f0293a; /* Back to Start */
+    }
+  }
+  
+  .html{
+    width: 90%;
+    background-color: #f16529;
+    border-radius: 2rem ;
+  }
+  .css{
+    width: 85%;
+    background-color: #653196;
+    border-radius: 2rem ;
+  }
+  .js{
+    width: 70%;
+    background-color: #efd81d;
+    border-radius: 2rem ;
+  
+  }
+  .design{
+    width: 90%;
+    background-color: #146ea9;
+    border-radius: 2rem ;
+  
+  }
+  
+  .React{
+    width: 70%;
+    background-color: #5ed5f6;
+    border-radius: 2rem ;
+  
+  }
+  
+  .git{
+    width: 85%;
+    background-color: #ec4e1d;
+    border-radius: 2rem ;
+  
+  }
+  
+  .skills__size{
+    text-align: center;
+    padding: .5rem 0 .5rem .5rem;
+    color: #ffffff;
+  }
+  
+  .skills__years{
+    display: inline-block;
+    font-size: var(--font-size-20);
+    margin-top: 1rem;
+  }
+  
+  .skills__item{
+    text-align: center;
+    transition: var(--transition-timing);
+    user-select: none;
+  }
+  
+  .skills__item:hover{
+    text-shadow: 0 0 2px var(--color-green);
+  }
+  
